@@ -1,0 +1,94 @@
+# Wolfgang Pop Website - Cursor AI Agent Rules
+
+## Project Overview
+This is the Wolfgang Pop website - a v1 marketing site for a local popcorn stand brand.
+
+## Critical Rules
+
+### 1. Read Specification First
+- **ALWAYS read `docs/SPEC.md` in full before starting any task**
+- The specification is the single source of truth for this project
+- Do not assume requirements beyond what is written in the spec
+
+### 2. Scope Boundaries
+- This is a Version 1 (v1) website with strict scope limitations
+- **DO NOT add features not explicitly listed in the spec**
+- If a feature is not in the "Included in v1" section, it is out of scope
+- Do not add "improvements" without explicit approval
+
+### 3. Development Workflow
+- **NEVER commit directly to `main`**
+- Always create feature branches: `git checkout -b feature/your-feature-name`
+- Push changes to test branches for review
+- Only merge to `main` after approval
+- Use clear, descriptive commit messages
+
+### 4. Tech Stack (Non-Negotiable)
+- Next.js 14 with App Router
+- TypeScript for all source files
+- Tailwind CSS 3.4.1 for styling
+- No additional UI frameworks or CSS libraries
+- No databases or CMS in v1
+
+### 5. Project Structure
+- Pages: `/src/app/`
+- Components: `/src/components/`
+- Utilities: `/src/lib/`
+- **Do not reorganize without approval**
+
+### 6. Brand Colors (Approved Only)
+Use ONLY these colors:
+- Butter Yellow: `#F3E1A4` (use `butter-yellow` in Tailwind)
+- Plum Purple: `#4B2E83` (use `plum-purple` in Tailwind)
+- Charcoal: `#1F1F1F` (use `charcoal` in Tailwind)
+- Warm Gray: `#9B9B9B` (use `warm-gray` in Tailwind)
+
+**No other colors may be introduced.**
+
+### 7. Code Quality
+- Keep code simple and readable
+- Avoid unnecessary abstraction
+- Ensure `pnpm run build` succeeds without errors
+- Resolve all warnings before completing work
+
+### 8. Pages (v1 Scope)
+Only these pages should exist:
+1. Home (`/`)
+2. Menu (`/menu`)
+3. About (`/about`)
+4. Contact (`/contact`)
+
+### 9. Explicitly Excluded from v1
+Do NOT implement:
+- Online ordering or payments
+- User accounts or authentication
+- Databases or CMS systems
+- Admin dashboards
+- Blog functionality
+- Advanced animations
+- Third-party UI frameworks beyond Tailwind CSS
+
+### 10. When Unclear
+- If a requirement is unclear or missing, **STOP and ask for clarification**
+- Do not guess or interpret beyond what is written
+- Prefer simple solutions over complex ones
+
+## Definition of Done
+Work is complete when:
+- ✅ All pages exist and render correctly
+- ✅ Navigation works between all pages
+- ✅ Site is responsive and mobile-friendly
+- ✅ Contact form sends emails successfully
+- ✅ Branding follows approved guidelines
+- ✅ No out-of-scope features added
+- ✅ `pnpm run build` succeeds without errors
+- ✅ All changes committed and pushed to feature branch
+
+## Tone & Style
+- Friendly and approachable
+- Clear and straightforward
+- Confident but not salesy
+- Local and human, not corporate
+
+## Remember
+**You are not permitted to reinterpret or override the specification. Follow `docs/SPEC.md` exactly.**
